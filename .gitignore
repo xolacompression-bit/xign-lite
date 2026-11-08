@@ -1,0 +1,9 @@
+release/
+*.o
+xign-lite
+xign-lite.exe
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
