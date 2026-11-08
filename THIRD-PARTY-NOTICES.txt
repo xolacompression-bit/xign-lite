@@ -1,0 +1,26 @@
+XIGN LITE - THIRD-PARTY NOTICES
+
+Xign Lite's own code (everything in src/ and android/) is Copyright 2026 Ximon Paul M. Rodriguez, licensed under the Apache License,
+Version 2.0, except src/zlib/ (an unchanged copy of zlib 1.3.1), under the zlib License (at the end of this file). Every
+method in Lite's own code was written from published papers and public specifications (docs/SOURCES.md).
+
+What the released programs contain besides that code:
+
+1. Windows program (xign-lite.exe) - built with MinGW-w64 GCC and linked statically with:
+   - the MinGW-w64 runtime and the winpthreads library (MinGW-w64 project; permissive licences),
+   - libgcc (GPL version 3 with the GCC Runtime Library Exception, which allows distributing programs compiled with GCC
+     under any licence).
+   Their licence texts are in the licenses/ folder of the source repository (MinGW-w64-runtime.txt, winpthreads.txt,
+   GCC-RUNTIME-LIBRARY-EXCEPTION-3.1.txt, GPL-3.0.txt) and are copied below in the Windows release.
+
+2. Linux program (xign-lite) - linked dynamically to the system's C library; no C library code is included.
+
+3. Android app - contains zlib 1.3.1 (src/zlib/, zlib License) and no other third-party library. Its native part is compiled with the Android NDK (Clang); the
+   compiler's runtime support is under the Apache License 2.0 with LLVM Exceptions.
+
+
+------------------------------------------------------------------------------
+zlib 1.3.1 (src/zlib/, unchanged files; built with Z_PREFIX)
+https://github.com/madler/zlib
+(C) 1995-2024 Jean-loup Gailly and Mark Adler. zlib License - full text in src/zlib/LICENSE.
+Used to unpack and re-pack the packed parts inside documents and PNGs exactly (src/lopen.c).
